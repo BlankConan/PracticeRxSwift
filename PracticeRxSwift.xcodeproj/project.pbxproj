@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		0AF1C65223634FC800BB2208 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1C65123634FC800BB2208 /* Preview Assets.xcassets */; };
 		0AF1C65523634FC800BB2208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1C65323634FC800BB2208 /* LaunchScreen.storyboard */; };
 		0AF1C66223635AC800BB2208 /* CompletableCLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1C66123635AC800BB2208 /* CompletableCLS.swift */; };
+		368B0B0D236426CE0097944A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368B0B0C236426CE0097944A /* Main.storyboard */; };
+		368B0B11236427490097944A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0B10236427490097944A /* ViewController.swift */; };
+		368B0B3423642E210097944A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0B3323642E210097944A /* LoginVC.swift */; };
 		DA186B591EAA3DF4BD5BA97B /* Pods_PracticeRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0FB68CF8C5724F5DFAB085 /* Pods_PracticeRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		0AF1C65623634FC800BB2208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF1C66123635AC800BB2208 /* CompletableCLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletableCLS.swift; sourceTree = "<group>"; };
 		11EB1FC162C54B7F65B7FC1E /* Pods-PracticeRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeRxSwift.release.xcconfig"; path = "Target Support Files/Pods-PracticeRxSwift/Pods-PracticeRxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		368B0B0C236426CE0097944A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		368B0B10236427490097944A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		368B0B3323642E210097944A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4A0FB68CF8C5724F5DFAB085 /* Pods_PracticeRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD3EFAB44DE32B79657802C /* Pods-PracticeRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-PracticeRxSwift/Pods-PracticeRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,9 +71,12 @@
 		0AF1C64723634FC500BB2208 /* PracticeRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				368B0B3223642E060097944A /* Classes */,
 				0AF1C66023635AB200BB2208 /* RxCore */,
 				0AF1C64823634FC500BB2208 /* AppDelegate.swift */,
 				0AF1C64A23634FC500BB2208 /* SceneDelegate.swift */,
+				368B0B10236427490097944A /* ViewController.swift */,
+				368B0B0C236426CE0097944A /* Main.storyboard */,
 				0AF1C64C23634FC500BB2208 /* ContentView.swift */,
 				0AF1C64E23634FC800BB2208 /* Assets.xcassets */,
 				0AF1C65323634FC800BB2208 /* LaunchScreen.storyboard */,
@@ -100,6 +109,14 @@
 				11EB1FC162C54B7F65B7FC1E /* Pods-PracticeRxSwift.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		368B0B3223642E060097944A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				368B0B3323642E210097944A /* LoginVC.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		E4A1CDA09E1DED50B4E81128 /* Frameworks */ = {
@@ -173,6 +190,7 @@
 				0AF1C65523634FC800BB2208 /* LaunchScreen.storyboard in Resources */,
 				0AF1C65223634FC800BB2208 /* Preview Assets.xcassets in Resources */,
 				0AF1C64F23634FC800BB2208 /* Assets.xcassets in Resources */,
+				368B0B0D236426CE0097944A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368B0B11236427490097944A /* ViewController.swift in Sources */,
 				0AF1C64923634FC500BB2208 /* AppDelegate.swift in Sources */,
+				368B0B3423642E210097944A /* LoginVC.swift in Sources */,
 				0AF1C66223635AC800BB2208 /* CompletableCLS.swift in Sources */,
 				0AF1C64B23634FC500BB2208 /* SceneDelegate.swift in Sources */,
 				0AF1C64D23634FC500BB2208 /* ContentView.swift in Sources */,
@@ -373,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gang.liu.PracticeRxSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PracticeRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -393,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gang.liu.PracticeRxSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PracticeRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
