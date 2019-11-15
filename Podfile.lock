@@ -1,4 +1,6 @@
 PODS:
+  - Alamofire (5.0.0-rc.3)
+  - HandyJSON (5.0.1)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -7,6 +9,8 @@ PODS:
   - RxSwift (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - HandyJSON (~> 5.0.1)
   - RxCocoa
   - RxSwift
 
@@ -15,12 +19,17 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+  trunk:
+    - Alamofire
+    - HandyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: b0212094f9c4961300d0bc7d4615d73c70972db3
+PODFILE CHECKSUM: 6c727d74faecf4f7a81dc12778ba248408ef4220
 
 COCOAPODS: 1.8.4
