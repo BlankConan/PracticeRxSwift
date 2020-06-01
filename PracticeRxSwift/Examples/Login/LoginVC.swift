@@ -19,7 +19,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTip: UILabel!
     @IBOutlet weak var doneBtn: UIButton!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,7 +65,9 @@ extension LoginVC {
     func showAlert() {
         
         let alert = UIAlertController(title: "Tips", message: "xxxxxx", preferredStyle: .alert)
-        
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { [weak self]_ in
+            self?.dismiss(animated: true, completion: nil)
+        }))
         self.present(alert, animated: true, completion: nil)
     }
     
