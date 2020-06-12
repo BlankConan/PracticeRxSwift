@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dcV-eJ-fek">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w6b-v4-9Iy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -37,17 +37,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="z9t-ur-YM3" firstAttribute="leading" secondItem="31p-UG-N9T" secondAttribute="leading" id="Qy5-lg-79F"/>
-                            <constraint firstItem="z9t-ur-YM3" firstAttribute="top" secondItem="31p-UG-N9T" secondAttribute="top" constant="44" id="WIn-2Y-XB7"/>
+                            <constraint firstItem="z9t-ur-YM3" firstAttribute="top" secondItem="31p-UG-N9T" secondAttribute="top" id="WIn-2Y-XB7"/>
                             <constraint firstItem="z9t-ur-YM3" firstAttribute="centerX" secondItem="FF3-9I-wH6" secondAttribute="centerX" id="hdS-oT-sEI"/>
                             <constraint firstItem="z9t-ur-YM3" firstAttribute="bottom" secondItem="31p-UG-N9T" secondAttribute="bottom" id="wd9-km-3I4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="31p-UG-N9T"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bUp-mj-ToT"/>
                     <connections>
                         <outlet property="table" destination="z9t-ur-YM3" id="5vh-tM-XaB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9F-Kb-JNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="-291.29464285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ma1-MY-7Ku">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w6b-v4-9Iy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7zh-Rn-sF5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dcV-eJ-fek" kind="relationship" relationship="rootViewController" id="99B-EG-3VA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVx-Yg-6hY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-210.1449275362319" y="-291.29464285714283"/>
         </scene>

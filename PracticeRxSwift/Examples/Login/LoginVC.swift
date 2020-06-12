@@ -13,6 +13,8 @@ class LoginVC: UIViewController {
     private let minimalUsernameLength = 5
     private let disposeBag = DisposeBag()
     
+    
+    @IBOutlet weak var egBtn: UIButton!
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var usernameTip: UILabel!
     @IBOutlet weak var passwordTF: UITextField!
@@ -23,6 +25,16 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+    }
+
+}
+
+// MARK: 第一版
+extension LoginVC {
+    
+    func firstVersion() {
         // 用户名是否有效
         let usernameValid = usernameTF.rx.text.orEmpty.map{$0.count > self.minimalUsernameLength }.share(replay: 1)
         
@@ -52,15 +64,23 @@ class LoginVC: UIViewController {
         doneBtn.rx.tap
             .subscribe(onNext: { [weak self] in self?.showAlert() })
             .disposed(by:disposeBag)
-        
-        
     }
-    
     
 }
 
-// MARK: 第一版
+// MARK: 第二版
 extension LoginVC {
+    
+}
+
+// MARK: Actions
+extension LoginVC {
+    
+    
+    @IBAction func actionB(_ sender: Any) {
+        
+    }
+    
     
     func showAlert() {
         
@@ -70,5 +90,11 @@ extension LoginVC {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
+}
+
+// MARK: 例子
+extension LoginVC {
+    func laoshiji() {
+        
+    }
 }
